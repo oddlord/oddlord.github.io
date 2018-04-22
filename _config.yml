@@ -32,8 +32,6 @@ carousel_colours:
   - '#607d8b'
   - '#546e7a'
 
-syntax_highlighting: true
-
 # Skill icons from https://konpa.github.io/devicon/
 skills:
   - icon: atom
