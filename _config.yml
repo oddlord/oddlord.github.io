@@ -1,0 +1,117 @@
+title: Tommaso Papini
+name: Tommaso Papini
+email: tommy39@gmail.com
+description: Game Developer
+
+# These are the images used for the parallax background
+parallax_image_one: assets/images/laptopcodecoffe.jpg
+parallax_image_two: assets/images/laptopcodecoffe.jpg
+
+contact_image: assets/images/contact.jpg
+
+# icons are from materialize css, the full collection is here: http://materializecss.com/icons.html
+projects:
+  - name: Drop7 clone
+    description: A clone of the popular smartphone game Drop7 made in HTML5 and Javascript completely from scratch as a personal project.
+    url: https://github.com/oddlord/html5-js-drop7
+    image: assets/images/drop7.png
+    icon: videogame_asset
+  - name: Multiplayer FPS
+    description: An online 3D multiplayer FPS made in Unity, following an online tutorial as a personal project.
+    url: https://github.com/oddlord/unity-multiplayer-fps
+    image: assets/images/multiplayer_fps.png
+    icon: videogame_asset
+    download: https://github.com/oddlord/unity-multiplayer-fps/raw/master/MultiplayerFPS/Releases/Windows_x86.rar
+
+portfolio_heading: Portfolio
+portfolio_type: cards
+
+carousel_colours:
+  - '#90a4ae'
+  - '#78909c'
+  - '#607d8b'
+  - '#546e7a'
+
+syntax_highlighting: true
+
+# Skill icons from https://konpa.github.io/devicon/
+skills:
+  - icon: atom
+    title: Atom
+  - image: blender.png
+    title: Blender
+  - icon: bootstrap
+    title: Bootstrap
+  - icon: c
+    title: C
+  - icon: chrome
+    title: Google Chrome
+  - icon: cplusplus
+    title: C++
+  - icon: csharp
+    title: 'C#'
+  - icon: css3
+    title: CSS3
+  - icon: firefox
+    title: Mozilla Firefox
+  - icon: gimp
+    title: Gimp
+  - icon: git
+    title: Git
+  - icon: github
+    title: Github
+  - icon: html5
+    title: HTML5
+  - icon: java
+    title: Java
+  - icon: javascript
+    title: Javascript
+  - image: latex.svg
+    title: LaTeX
+  - icon: linux
+    title: Linux
+  - image: matlab.png
+    title: Matlab
+  - icon: python
+    title: Python
+  - icon: sass
+    title: Sass
+  - icon: ssh
+    title: SSH
+  - icon: ubuntu
+    title: Ubuntu
+  - image: unity.svg
+    title: Unity
+  - icon: visualstudio
+    title: VisualStudio
+  - icon: windows8
+    title: Windows
+
+icon_size: 50 # font-size of icons in px
+colored: colored # Leave blank for black and white icons
+
+project_button: Github
+
+github: https://github.com/oddlord
+linkedin: https://www.linkedin.com/in/tommaso-papini/
+
+baseurl: # If your site is located at /blog or /home, enter it here, otherwise leave it empty
+url: http://localhost:4000/ # The url of your site
+
+# Google tracking, if both are filled, tag manager will prevail. Set up GA through GTM in that case
+tag_manager_id: # This looks something like GTM-XXXXXXX
+google_analytics_tracking_id: # This looks something like UA-000000000-0 Head over to https://analytics.google.com/ to setup.
+
+cookies_banner: none # The value "show" will show the cookies banner, the value "none" will hide the banner.
+cookie_accept_message: Thanks!
+
+syntax_highlighting: true # include the css for syntax highlighting
+
+# Build settings
+markdown: kramdown
+# theme: minima
+permalink: pretty
+plugins:
+  - jekyll-feed
+  - jekyll-assets
+  - jekyll-minifier

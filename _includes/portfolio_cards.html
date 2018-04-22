@@ -1,0 +1,32 @@
+<div class="row">
+  {% for project in site.projects %}
+    <!-- {% capture modulo %}{{ forloop.index0 | modulo:2 }}{% endcapture %}
+    {% if modulo == '0' %}
+      <div class="row">
+    {% endif %} -->
+    <div class="col s12 m6">
+      <div class="card medium sticky-action">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="{{project.image}}">
+        </div>
+        <div class="card-action">
+          <span class="card-title activator grey-text text-darken-4">{{project.name}}<i class="material-icons right">more_vert</i></span>
+          <p><a href="{{project.url}}" target="_blank">{{site.project_button}}</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+          <p>{{project.description}}</p>
+          {% if project.playonline %}
+            <a class="waves-effect grey darken-2 z-depth-4 waves-light btn" href="{{project.playonline}}" target="_blank"><i class="material-icons right">videogame_asset</i>Play Online</a>
+          {% endif %}
+          {% if project.download %}
+            <a class="waves-effect grey darken-2 z-depth-4 waves-light btn" href="{{project.download}}" target="_blank"><i class="material-icons right">file_download</i>Download</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <!-- {% if modulo == '1' or forloop.index == forloop.length %}
+      </div>
+    {% endif %} -->
+  {% endfor %}
+</div>
