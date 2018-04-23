@@ -16,12 +16,19 @@ projects:
     url: https://github.com/oddlord/html5-js-drop7
     image: assets/images/drop7.png
     icon: videogame_asset
+    buttons:
+      - text: Play Online
+        icon: videogame_asset
+        file_url: drop7.html
   - name: Multiplayer FPS
     description: An online 3D multiplayer FPS made in Unity, following an online tutorial as a personal project.
     url: https://github.com/oddlord/unity-multiplayer-fps
     image: assets/images/multiplayer_fps.png
     icon: videogame_asset
-    download: https://github.com/oddlord/unity-multiplayer-fps/raw/master/MultiplayerFPS/Releases/Windows_x86.rar
+    buttons:
+      - text: Download
+        icon: file_download
+        absolute_url: https://github.com/oddlord/unity-multiplayer-fps/raw/master/MultiplayerFPS/Releases/Windows_x86.rar
 
 portfolio_heading: Portfolio
 portfolio_type: cards
@@ -36,6 +43,8 @@ carousel_colours:
 skills:
   - icon: atom
     title: Atom
+  - icon: babel
+    title: Babel
   - image: blender.png
     title: Blender
   - icon: bootstrap

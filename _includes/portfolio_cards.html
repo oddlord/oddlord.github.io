@@ -16,12 +16,16 @@
         <div class="card-reveal">
           <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
           <p>{{project.description}}</p>
-          {% if project.playonline %}
-            <a class="waves-effect grey darken-2 z-depth-4 waves-light btn" href="{{project.playonline}}" target="_blank"><i class="material-icons right">videogame_asset</i>Play Online</a>
-          {% endif %}
-          {% if project.download %}
-            <a class="waves-effect grey darken-2 z-depth-4 waves-light btn" href="{{project.download}}" target="_blank"><i class="material-icons right">file_download</i>Download</a>
-          {% endif %}
+          {% for button in project.buttons %}
+            {% capture url %}
+              {% if button.file_url %}
+                {{ button.file_url | absolute_url }}
+              {% elsif button.absolute_url %}
+                {{ button.absolute_url }}
+              {% endif %}
+            {% endcapture %}
+            <a class="waves-effect grey darken-2 z-depth-4 waves-light btn" href="{{url}}"><i class="material-icons right">{{button.icon}}</i>{{button.text}}</a>
+          {% endfor %}
         </div>
       </div>
     </div>
