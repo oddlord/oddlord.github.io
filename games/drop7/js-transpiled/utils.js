@@ -137,7 +137,7 @@ function inAnimation() {
 }
 
 function playAudio(audioName, loop) {
-  var audio = new Audio('assets/games/drop7/audio/' + audioName);
+  var audio = new Audio('audio/' + audioName);
   if (loop) {
     audio.addEventListener('ended', function () {
       this.currentTime = 0;

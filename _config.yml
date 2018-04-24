@@ -19,7 +19,7 @@ projects:
     buttons:
       - text: Play Online
         icon: videogame_asset
-        file_url: drop7.html
+        file_url: games/drop7
   - name: Multiplayer FPS
     description: An online 3D multiplayer FPS made in Unity, following an online tutorial as a personal project.
     url: https://github.com/oddlord/unity-multiplayer-fps

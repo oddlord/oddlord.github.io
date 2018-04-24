@@ -14,7 +14,7 @@ function canvasInit() {
 function loadImages() {
   for (var i = 0; i < imagesSrc.length; i++) {
     var img = new Image();
-    img.src = 'assets/games/drop7/img/' + imagesSrc[i];
+    img.src = 'img/' + imagesSrc[i];
     images[imagesSrc[i]] = img;
   }
 

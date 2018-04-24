@@ -19,12 +19,12 @@
           {% for button in project.buttons %}
             {% capture url %}
               {% if button.file_url %}
-                {{ button.file_url | absolute_url }}
+                {{site.baseurl}}/{{button.file_url}}
               {% elsif button.absolute_url %}
                 {{ button.absolute_url }}
               {% endif %}
             {% endcapture %}
-            <a class="waves-effect grey darken-2 z-depth-4 waves-light btn" href="{{url}}"><i class="material-icons right">{{button.icon}}</i>{{button.text}}</a>
+            <a class="waves-effect grey darken-2 z-depth-4 waves-light btn" href="{{url}}" target="_blank"><i class="material-icons right">{{button.icon}}</i>{{button.text}}</a>
           {% endfor %}
         </div>
       </div>
