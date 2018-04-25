@@ -50,8 +50,14 @@ var avgScoreUpImgName = 'avg-score-up.png';
 var avgScoreDownImgName = 'avg-score-down.png';
 
 // Audio files names -------------------
-var explosionAudioName = 'ding.mp3';
-var musicAudioName = 'retroland-recital.mp3';
+var explosionAudioName = {
+  src: 'ding.mp3',
+  loop: false
+};
+var musicAudioName = {
+  src: 'retroland-recital.mp3',
+  loop: true
+};
 
 // Dimensions --------------------
 var canvasHScale = 0.9; // WRT document body

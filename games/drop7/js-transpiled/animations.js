@@ -133,7 +133,7 @@ function matchPointsAnimStart(matchedPieces, points, startTime) {
       var matchedPiece = _step2.value;
 
       if (playerAction && soundEnabled) {
-        playAudio(explosionAudioName, false);
+        audios[explosionAudioName.src].play();
       }
 
       var i = matchedPiece.i;
@@ -253,7 +253,7 @@ function nextLevelAnimStart(points) {
   animatingNextLevel = true;
 
   if (soundEnabled) {
-    playAudio(explosionAudioName, false);
+    audios[explosionAudioName.src].play();
   }
 
   window.requestAnimationFrame(function () {
@@ -293,7 +293,7 @@ function boardClearAnimStart() {
   animatingBoardClear = true;
 
   if (soundEnabled) {
-    playAudio(explosionAudioName, false);
+    audios[explosionAudioName.src].play();
   }
 
   window.requestAnimationFrame(function () {
