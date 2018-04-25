@@ -3,7 +3,7 @@
 // Misc settings ---------------------
 var cellBlue = '#284c7c'; // used for grid cells
 var darkBlue = '#223f5f'; // used for text and other elements
-var lightBlue = '#3a84c1'; // used for gameover BG
+var lightBlue = '#3a84c1'; // used for gameover and menu BG
 var newHighscoreBlue = '#57cbf0'; // used for the "New Highscore" text
 var buttonGreen = '#65be7a'; // used for buttons
 var pauseLightGrey = '#cfd0d4'; // used for pause BG
@@ -40,6 +40,7 @@ var blitzDrops = 5;
 var maxDropCountsRef = Math.max(classicSequenceDrops, blitzDrops);
 
 // Images names ------------------
+var loadingImgName = 'loading.png';
 var numberedPiecesImgNames = ['1piece.png', '2piece.png', '3piece.png', '4piece.png', '5piece.png', '6piece.png', '7piece.png'];
 var solidImgName = 'solid.png';
 var crackedImgName = 'cracked.png';

@@ -363,7 +363,6 @@ function gameover() {
 }
 
 function loadingComplete() {
-  var loadingText = document.getElementById('loading');
   loadingText.style.display = 'none';
   canvas.style.display = 'block';
   isLoaded = true;
@@ -562,4 +561,4 @@ var explodingPieces = 0;
 var animatingNextLevel = false;
 var animatingBoardClear = false;
 
-loadMedia();
+startLoading();

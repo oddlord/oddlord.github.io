@@ -1,5 +1,6 @@
 'use strict';
 
+var loadingText;
 var canvas = document.getElementById('d7-canvas');
 var context = canvas.getContext('2d');
 
@@ -9,6 +10,17 @@ function canvasInit() {
 
   context.imageSmoothingEnabled = true;
   context.imageSmoothingQuality = 'high';
+}
+
+function startLoading() {
+  loadingText = new Image();
+  loadingText.src = 'img/' + loadingImgName;
+  loadingText.classList.add('loading-text');
+  loadingText.onload = function () {
+    var aligner = document.getElementById('aligner');
+    aligner.appendChild(loadingText);
+    loadMedia();
+  };
 }
 
 function loadMedia() {
