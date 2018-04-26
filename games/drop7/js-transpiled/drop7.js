@@ -4,7 +4,7 @@ function applyGravity() {
   var noPieceFell = true;
 
   for (var i = 1; i <= 7; i++) {
-    for (var j = 7; j >= 1; j--) {
+    for (var j = 7; j >= 0; j--) {
       if (j === 7 || grid[i][j] === null) {
         continue;
       }
