@@ -135,3 +135,21 @@ function inAnimation() {
 
   return inAnimation;
 }
+
+function playAudio(audioName) {
+  var audio = audios[audioName.src];
+  if (audioName.clone) {
+    audio = audio.cloneNode(true);
+  }
+  audio.play();
+}
+
+function pauseAudio(audioName) {
+  audios[audioName.src].pause();
+}
+
+function replayAudio(audioName) {
+  var audio = audios[audioName.src];
+  audio.currentTime = 0;
+  playAudio(audioName);
+}

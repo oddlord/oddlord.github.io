@@ -33,7 +33,7 @@ function loadMedia() {
     };
   }
 
-  for (var _i = 0; _i < audiosSrc.length; _i++) {
+  var _loop = function _loop(_i) {
     var audio = new Audio('audio/' + audiosSrc[_i].src);
     audios[audiosSrc[_i].src] = audio;
     audio.addEventListener('canplaythrough', function () {
@@ -41,10 +41,13 @@ function loadMedia() {
     }, false);
     if (audiosSrc[_i].loop) {
       audio.addEventListener('ended', function () {
-        this.currentTime = 0;
-        this.play();
+        replayAudio(audiosSrc[_i]);
       }, false);
     }
+  };
+
+  for (var _i = 0; _i < audiosSrc.length; _i++) {
+    _loop(_i);
   }
 }
 
