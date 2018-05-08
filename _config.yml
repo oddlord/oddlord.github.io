@@ -4,8 +4,8 @@ email: tommy39@gmail.com
 description: Game Developer
 
 # These are the images used for the parallax background
-parallax_image_one: assets/images/laptopcodecoffe.jpg
-parallax_image_two: assets/images/laptopcodecoffe.jpg
+parallax_image_one: assets/images/laptop.jpg
+parallax_image_two: assets/images/laptop.jpg
 
 contact_image: assets/images/contact.jpg
 
