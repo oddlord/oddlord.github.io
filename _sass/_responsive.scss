@@ -3,14 +3,14 @@
 }
 
 .site-name {
-  margin-top: 4vw;
+  margin-top: calc(20px + 3.5vw);
   margin-bottom: 0;
-  font-size: 5.5vw;
+  font-size: calc(12px + 5vw);
 }
 
 .site-description {
   margin-top: 1vw;
-  font-size: 2vw;
+  font-size: calc(6px + 1.8vw);
 }
 
 .section-header {
