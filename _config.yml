@@ -51,22 +51,22 @@ skills:
     title: Bootstrap
   - icon: c
     title: C
-  - icon: chrome
-    title: Google Chrome
   - icon: cplusplus
     title: C++
   - icon: csharp
     title: 'C#'
   - icon: css3
     title: CSS3
-  - icon: firefox
-    title: Mozilla Firefox
+  - image: eclipse.svg
+    title: Eclipse
   - icon: gimp
     title: Gimp
   - icon: git
     title: Git
   - icon: github
     title: Github
+  - icon: chrome
+    title: Google Chrome
   - icon: html5
     title: HTML5
   - icon: java
@@ -79,6 +79,8 @@ skills:
     title: Linux
   - image: matlab.png
     title: Matlab
+  - icon: firefox
+    title: Mozilla Firefox
   - icon: python
     title: Python
   - icon: sass
