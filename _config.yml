@@ -22,13 +22,13 @@ projects:
         file_url: games/drop7
   - name: Multiplayer FPS
     description: An online 3D multiplayer FPS made in Unity, following an online tutorial as a personal project.
-    url: https://github.com/oddlord/unity-multiplayer-fps
+    url: https://github.com/oddlord/unity-projects/tree/master/MultiplayerFPS
     image: assets/images/multiplayer_fps.png
     icon: videogame_asset
     buttons:
       - text: Download
         icon: file_download
-        absolute_url: https://github.com/oddlord/unity-multiplayer-fps/raw/master/MultiplayerFPS/Releases/Windows_x86.rar
+        absolute_url: https://github.com/oddlord/unity-projects/raw/master/MultiplayerFPS/Releases/Windows_x86.rar
 
 portfolio_heading: Portfolio
 portfolio_type: cards

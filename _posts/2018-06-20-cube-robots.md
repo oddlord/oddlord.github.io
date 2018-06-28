@@ -13,7 +13,7 @@ Hello everyone! It's me again, Tommaso, a.k.a. Oddlord. I know I haven't wrote a
 
 After my first few videogame projects (mostly tutorials and prototypes) I realised that I needed some proper skill about 3D modelling. So I started following a very useful online tutorial on Blender by [Blender Guru](https://www.blenderguru.com/) and after that, I decided to test my skills and, mostly, my artistic side.
 
-My main motivation was to create a 3D model of a robot in order to add my personal touch to the [Multiplayer FPS](https://github.com/oddlord/unity-multiplayer-fps) prototype I made, since I did it following an online tutorial and using 3rd party free assets. I'm no artist and my Blender skills are still pretty rudimentary, so the idea was to make something simple but still quite nice and cute. I took inspiration by several robots designs online, merging them together as I saw fit. After many trials and errors, the result was the following, the [Cube Robot](https://github.com/oddlord/blender-cube-robot):
+My main motivation was to create a 3D model of a robot in order to add my personal touch to the [Multiplayer FPS](https://github.com/oddlord/unity-projects/tree/master/MultiplayerFPS) prototype I made, since I did it following an online tutorial and using 3rd party free assets. I'm no artist and my Blender skills are still pretty rudimentary, so the idea was to make something simple but still quite nice and cute. I took inspiration by several robots designs online, merging them together as I saw fit. After many trials and errors, the result was the following, the [Cube Robot](https://github.com/oddlord/blender-cube-robot):
 
 <img src="/assets/images/cube-robot-idle-rotating.gif" style="width:100%;height:auto;"/>
 
