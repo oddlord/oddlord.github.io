@@ -11,6 +11,15 @@ contact_image: assets/images/contact.jpg
 
 # icons are from materialize css, the full collection is here: http://materializecss.com/icons.html
 projects:
+  - name: Dreameaters
+    description: A multiplayer FPS game made in Unity, where you play as a dream-eating ghost against your friends online, in order to decide who's gonna prey on tonight's unlucky sleepy victim. Game made completely from scratch, still under development.
+    url: https://github.com/oddlord/unity-dreameaters
+    image: assets/images/dreameaters.png
+    icon: videogame_asset
+    buttons:
+      - text: Download (win_x64)
+        icon: file_download
+        absolute_url: https://github.com/oddlord/unity-dreameaters/raw/master/Dreameaters/Release/Dreameaters-win_x64.zip
   - name: Cube Robot model
     description: A 3D model and basic animation of a simple Cube Robot made in Blender completely from scratch (design included) as a personal project.
     url: https://github.com/oddlord/blender-cube-robot
@@ -29,26 +38,26 @@ projects:
       - text: Play Online
         icon: videogame_asset
         file_url: games/drop7
-  - name: Unity projects
-    description: A collection of projects developed while learning Game Development in Unity.<ul><li>Clock</li><li>Cubethon (download <a href="https://github.com/oddlord/unity-projects/raw/master/Cubethon/Releases/Cubethon-win_x86.zip">win_x86</a>)</li><li>Graph</li><li>Multiplayer FPS (download <a href="https://github.com/oddlord/unity-projects/raw/master/MultiplayerFPS/Releases/MultiplayerFPS-win_x86.zip">win_x86</a>)</li><li>Portals</li></ul>
-    url: https://github.com/oddlord/unity-projects
-    image: assets/images/multiplayer_fps.png
-    icon: videogame_asset
-  - name: Blender projects
-    description: A collection of projects developed while learning 3D modelling in Blender.<ul><li>Doughnuts (<a href="https://raw.githubusercontent.com/oddlord/blender-projects/master/doughnuts/img/doughnuts-wide-text.png" target="_blank">preview</a>)</li><li>Low poly man (<a href="https://raw.githubusercontent.com/oddlord/blender-projects/master/low-poly-man/img/low-poly-man.png" target="_blank">preview</a>)</li></ul>
-    url: https://github.com/oddlord/blender-projects
-    image: assets/images/doughnuts-closeup.png
-    icon: 3d_rotation
-  - name: HTML5/Javascript projects
-    description: A collection of projects developed while learning Game Development in HTML5 and Javascript.<ul><li>Tetris (<a href="https://oddlord.github.io/games/tetris/" target="_blank">play online</a>)</li></ul>
-    url: https://github.com/oddlord/unity-projects
-    image: assets/images/tetris.png
-    icon: videogame_asset
-  - name: C++ projects
-    description: A collection of projects developed while learning Game Development in C++.<ul><li>Snake (download <a href="https://github.com/oddlord/cpp-gamedev-projects/raw/master/Snake/Release/Snake.exe">win32</a>)</li><li>Bull Cow Game [WIP]</li></ul>
-    url: https://github.com/oddlord/cpp-gamedev-projects
-    image: assets/images/snake.png
-    icon: videogame_asset
+  # - name: Unity projects
+  #   description: A collection of projects developed while learning Game Development in Unity.<ul><li>Clock</li><li>Cubethon (download <a href="https://github.com/oddlord/unity-projects/raw/master/Cubethon/Releases/Cubethon-win_x86.zip">win_x86</a>)</li><li>Graph</li><li>Multiplayer FPS (download <a href="https://github.com/oddlord/unity-projects/raw/master/MultiplayerFPS/Releases/MultiplayerFPS-win_x86.zip">win_x86</a>)</li><li>Portals</li></ul>
+  #   url: https://github.com/oddlord/unity-projects
+  #   image: assets/images/multiplayer_fps.png
+  #   icon: videogame_asset
+  # - name: Blender projects
+  #   description: A collection of projects developed while learning 3D modelling in Blender.<ul><li>Doughnuts (<a href="https://raw.githubusercontent.com/oddlord/blender-projects/master/doughnuts/img/doughnuts-wide-text.png" target="_blank">preview</a>)</li><li>Low poly man (<a href="https://raw.githubusercontent.com/oddlord/blender-projects/master/low-poly-man/img/low-poly-man.png" target="_blank">preview</a>)</li></ul>
+  #   url: https://github.com/oddlord/blender-projects
+  #   image: assets/images/doughnuts-closeup.png
+  #   icon: 3d_rotation
+  # - name: HTML5/Javascript projects
+  #   description: A collection of projects developed while learning Game Development in HTML5 and Javascript.<ul><li>Tetris (<a href="https://oddlord.github.io/games/tetris/" target="_blank">play online</a>)</li></ul>
+  #   url: https://github.com/oddlord/unity-projects
+  #   image: assets/images/tetris.png
+  #   icon: videogame_asset
+  # - name: C++ projects
+  #   description: A collection of projects developed while learning Game Development in C++.<ul><li>Snake (download <a href="https://github.com/oddlord/cpp-gamedev-projects/raw/master/Snake/Release/Snake.exe">win32</a>)</li><li>Bull Cow Game [WIP]</li></ul>
+  #   url: https://github.com/oddlord/cpp-gamedev-projects
+  #   image: assets/images/snake.png
+  #   icon: videogame_asset
 
 portfolio_heading: Portfolio
 portfolio_type: cards
