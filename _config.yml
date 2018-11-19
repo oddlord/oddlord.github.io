@@ -11,13 +11,22 @@ contact_image: assets/images/contact.jpg
 
 # icons are from materialize css, the full collection is here: http://materializecss.com/icons.html
 projects:
+  - name: Asteroids 3D
+    description: A 3D remaster of the classic arcade game Asteroids. Made from scratch with Unity, the game is available for both mobile and PC (with support for controllers).
+    url: https://github.com/oddlord/unity-asteroids
+    image: assets/images/asteroids.png
+    icon: videogame_asset
+    buttons:
+      - text: Download (Android & Windows)
+        icon: file_download
+        absolute_url: https://drive.google.com/drive/folders/1p2B6a51zJ4EjgFtYFJgk6XFCB7SYhkSL?usp=sharing
   - name: Dreameaters
     description: A multiplayer FPS game made in Unity, where you play as a dream-eating ghost against your friends online, in order to decide who's gonna prey on tonight's unlucky sleepy victim. Game made completely from scratch, still under development.
     url: https://github.com/oddlord/unity-dreameaters
     image: assets/images/dreameaters.png
     icon: videogame_asset
     buttons:
-      - text: Download (win_x64)
+      - text: Download (Windows)
         icon: file_download
         absolute_url: https://github.com/oddlord/unity-dreameaters/raw/master/Dreameaters/Release/Dreameaters-win_x64.zip
   - name: Cube Robot model
@@ -110,6 +119,8 @@ skills:
     title: Matlab
   - icon: firefox
     title: Mozilla Firefox
+  - image: opengl.svg
+    title: OpenGL
   - icon: python
     title: Python
   - icon: sass
@@ -118,6 +129,8 @@ skills:
     title: SSH
   - icon: ubuntu
     title: Ubuntu
+  - image: ue4.svg
+    title: Unreal Engine 4
   - image: unity.svg
     title: Unity
   - icon: visualstudio
