@@ -1,13 +1,10 @@
 ---
-layout: post
 title:  "Always learning"
 date:   2018-11-19 19:30:00 +0100
 image: /assets/images/unity-vs-ue.jpg
-
-excerpt_separator: <!--more-->
-
 ---
-Hello everyone! Finally I'm back from the dead to tell you a bit of what I've been doing, and especially learning these past few months!
+
+Hello everyone! Finally I'm back from the dead to tell you a bit of what I've been doing, and especially learning, these past few months!
 
 <!--more-->
 

@@ -1,26 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-      {% if jekyll.environment == 'production' %}
-        {% if site.tag_manager_id %}
-          {% include google_tag_manager.html %}
-        {% elsif site.google_analytics_tracking_id %}
-          {% include google_analytics.html %}
-        {% endif %}
-      {% endif %}
-
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/css/materialize.css">
-      <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/main.css">
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-      <title>{{site.title}}</title>
-    </head>
-    <body>
-      {% if site.tag_manager_id and jekyll.environment == 'production' %}
-        <!-- Google Tag Manager (noscript) -->
-          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{site.tag_manager_id}}"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
-      {% endif %}
+<head>
+	<title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!--[if lte IE 8]><script src="{{ "assets/js/ie/html5shiv.js" | relative_url }}"></script><![endif]-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="{{ "assets/css/main.css" | relative_url }}" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="{{ "assets/css/ie9.css" | relative_url }}" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="{{ "assets/css/ie8.css" | relative_url }}" /><![endif]-->
+</head>

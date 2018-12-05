@@ -1,5 +1,5 @@
 # oddlord.github.io
 
-My personal website hosted on [Github Pages](https://pages.github.com/).
+My personal website/portfolio/blog hosted on [Github Pages](https://pages.github.com/).
 
-The theme is the [jekyll-material-theme](https://github.com/jameshamann/jekyll-material-theme) developed by [James Hamann](https://github.com/jameshamann).
+The theme I've used is the [Forty theme](https://html5up.net/forty), from [HTML5 UP](https://html5up.net), and in particular I've modified the [Jekyll adaptation](https://jekyllthemes.io/theme/forty-jekyll-theme) of the theme made by [Andrew Banchich](https://github.com/andrewbanchich).

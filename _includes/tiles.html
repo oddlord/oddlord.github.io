@@ -1,0 +1,20 @@
+{% assign projects_count_modulo2 = site.projects | size | modulo: 2 %}
+<a id="portfolio" class="anchor"></a>
+<section id="one" class="tiles {% if projects_count_modulo2 == 0 %}even-tiles{% else %}odd-tiles{% endif %}">
+  {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+  {% for project in sorted_projects %}
+  <article>
+    <span class="image">
+      <img src="{{ project.image }}" alt="" />
+    </span>
+    <header class="major">
+      <h3><a href="{{ project.url  | relative_url }}" class="link">{{ project.title }}</a></h3>
+      <p>{{ project.description }}</p>
+    </header>
+
+    {% assign technologies = project.technologies %}
+    {% include technologies.html %}
+
+  </article>
+  {% endfor %}
+</section>

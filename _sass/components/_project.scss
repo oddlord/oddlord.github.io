@@ -1,0 +1,31 @@
+#wrapper .project div.inner {
+  padding-top: 2em;
+}
+
+.project {
+
+  p, ul, .major {
+    margin-bottom: 1em;
+  }
+
+  .major {
+    margin-top: 2em;
+  }
+
+  ul.controls {
+    .key {
+      font-weight: bold;
+      display: inline;
+    }
+  }
+
+  .project-content {
+    p {
+      text-align: justify;
+    }
+  }
+
+  .actions {
+    margin-top: 2em;
+  }
+}

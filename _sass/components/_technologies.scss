@@ -1,0 +1,23 @@
+#banner .technologies {
+  z-index: 2;
+}
+
+.technologies {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding-bottom: 0.25em;
+
+  i {
+    font-size: 3em;
+    color: white;
+    margin-right: 0.25em;
+  }
+
+  img {
+    width: 3em;
+    height: auto;
+    filter: invert(100%);
+    margin-right: 0.5em;
+  }
+}

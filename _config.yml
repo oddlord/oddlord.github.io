@@ -1,166 +1,49 @@
-title: Tommaso Papini - Game Developer
-name: Tommaso Papini
+# site settings
+title: Oddlord
+subtitle: GameDev
 email: tommy39@gmail.com
-description: Game Developer
+baseurl: # the subpath of your site, e.g. /blog
+url: # the base hostname & protocol for your site
+author: Tommaso Papini
 
-# These are the images used for the parallax background
-parallax_image_one: assets/images/laptop.jpg
-parallax_image_two: assets/images/laptop.jpg
+# collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name
 
-contact_image: assets/images/contact.jpg
+# defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      author: "Tommaso Papini"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      excerpt_separator: <!--more-->
 
-# icons are from materialize css, the full collection is here: http://materializecss.com/icons.html
-projects:
-  - name: Asteroids 3D
-    description: A 3D remaster of the classic arcade game Asteroids. Made from scratch with Unity, the game is available for both mobile and PC (with support for controllers).
-    url: https://github.com/oddlord/unity-asteroids
-    image: assets/images/asteroids.png
-    icon: videogame_asset
-    buttons:
-      - text: Download (Android & Windows)
-        icon: file_download
-        absolute_url: https://drive.google.com/drive/folders/1p2B6a51zJ4EjgFtYFJgk6XFCB7SYhkSL?usp=sharing
-  - name: Dreameaters
-    description: A multiplayer FPS game made in Unity, where you play as a dream-eating ghost against your friends online, in order to decide who's gonna prey on tonight's unlucky sleepy victim. Game made completely from scratch, still under development.
-    url: https://github.com/oddlord/unity-dreameaters
-    image: assets/images/dreameaters.png
-    icon: videogame_asset
-    buttons:
-      - text: Download (Windows)
-        icon: file_download
-        absolute_url: https://github.com/oddlord/unity-dreameaters/raw/master/Dreameaters/Release/Dreameaters-win_x64.zip
-  - name: Cube Robot model
-    description: A 3D model and basic animation of a simple Cube Robot made in Blender completely from scratch (design included) as a personal project.
-    url: https://github.com/oddlord/blender-cube-robot
-    image: assets/images/cube-robot.png
-    icon: 3d_rotation
-    buttons:
-      - text: Preview
-        icon: photo
-        absolute_url: https://github.com/oddlord/blender-cube-robot/raw/master/img/idle-rotating.gif
-  - name: Drop7 clone
-    description: A clone of the popular smartphone game Drop7 made in HTML5 and Javascript completely from scratch as a personal project.
-    url: https://github.com/oddlord/html5-js-drop7
-    image: assets/images/drop7.png
-    icon: videogame_asset
-    buttons:
-      - text: Play Online
-        icon: videogame_asset
-        file_url: games/drop7
-  # - name: Unity projects
-  #   description: A collection of projects developed while learning Game Development in Unity.<ul><li>Clock</li><li>Cubethon (download <a href="https://github.com/oddlord/unity-projects/raw/master/Cubethon/Releases/Cubethon-win_x86.zip">win_x86</a>)</li><li>Graph</li><li>Multiplayer FPS (download <a href="https://github.com/oddlord/unity-projects/raw/master/MultiplayerFPS/Releases/MultiplayerFPS-win_x86.zip">win_x86</a>)</li><li>Portals</li></ul>
-  #   url: https://github.com/oddlord/unity-projects
-  #   image: assets/images/multiplayer_fps.png
-  #   icon: videogame_asset
-  # - name: Blender projects
-  #   description: A collection of projects developed while learning 3D modelling in Blender.<ul><li>Doughnuts (<a href="https://raw.githubusercontent.com/oddlord/blender-projects/master/doughnuts/img/doughnuts-wide-text.png" target="_blank">preview</a>)</li><li>Low poly man (<a href="https://raw.githubusercontent.com/oddlord/blender-projects/master/low-poly-man/img/low-poly-man.png" target="_blank">preview</a>)</li></ul>
-  #   url: https://github.com/oddlord/blender-projects
-  #   image: assets/images/doughnuts-closeup.png
-  #   icon: 3d_rotation
-  # - name: HTML5/Javascript projects
-  #   description: A collection of projects developed while learning Game Development in HTML5 and Javascript.<ul><li>Tetris (<a href="https://oddlord.github.io/games/tetris/" target="_blank">play online</a>)</li></ul>
-  #   url: https://github.com/oddlord/unity-projects
-  #   image: assets/images/tetris.png
-  #   icon: videogame_asset
-  # - name: C++ projects
-  #   description: A collection of projects developed while learning Game Development in C++.<ul><li>Snake (download <a href="https://github.com/oddlord/cpp-gamedev-projects/raw/master/Snake/Release/Snake.exe">win32</a>)</li><li>Bull Cow Game [WIP]</li></ul>
-  #   url: https://github.com/oddlord/cpp-gamedev-projects
-  #   image: assets/images/snake.png
-  #   icon: videogame_asset
+# social settings
+500px_url:
+facebook_url:
+github_url: https://github.com/oddlord
+gitlab_url:
+googleplus_url:
+instagram_url:
+linkedin_url: https://www.linkedin.com/in/tommaso-papini/
+pinterest_url:
+slack_url:
+twitter_url: https://twitter.com/TheOddlord
 
-portfolio_heading: Portfolio
-portfolio_type: cards
-
-carousel_colours:
-  - '#90a4ae'
-  - '#78909c'
-  - '#607d8b'
-  - '#546e7a'
-
-# Skill icons from https://konpa.github.io/devicon/
-skills:
-  - icon: atom
-    title: Atom
-  - icon: babel
-    title: Babel
-  - image: blender.png
-    title: Blender
-  - icon: bootstrap
-    title: Bootstrap
-  - icon: c
-    title: C
-  - icon: cplusplus
-    title: C++
-  - icon: csharp
-    title: 'C#'
-  - icon: css3
-    title: CSS3
-  - image: eclipse.svg
-    title: Eclipse
-  - icon: gimp
-    title: Gimp
-  - icon: git
-    title: Git
-  - icon: github
-    title: Github
-  - icon: chrome
-    title: Google Chrome
-  - icon: html5
-    title: HTML5
-  - icon: java
-    title: Java
-  - icon: javascript
-    title: Javascript
-  - image: latex.svg
-    title: LaTeX
-  - icon: linux
-    title: Linux
-  - image: matlab.png
-    title: Matlab
-  - icon: firefox
-    title: Mozilla Firefox
-  - image: opengl.svg
-    title: OpenGL
-  - icon: python
-    title: Python
-  - icon: sass
-    title: Sass
-  - icon: ssh
-    title: SSH
-  - icon: ubuntu
-    title: Ubuntu
-  - image: ue4.svg
-    title: Unreal Engine 4
-  - image: unity.svg
-    title: Unity
-  - icon: visualstudio
-    title: VisualStudio
-  - icon: windows8
-    title: Windows
-
-icon_size: 50 # font-size of icons in px
-colored: colored # Leave blank for black and white icons
-
-project_button: Github
-
-github: https://github.com/oddlord
-linkedin: https://www.linkedin.com/in/tommaso-papini/
-
-baseurl: # If your site is located at /blog or /home, enter it here, otherwise leave it empty
-url: https://oddlord.github.io # The url of your site
-
-# Google tracking, if both are filled, tag manager will prevail. Set up GA through GTM in that case
-tag_manager_id: # This looks something like GTM-XXXXXXX
-google_analytics_tracking_id: # This looks something like UA-000000000-0 Head over to https://analytics.google.com/ to setup.
-
-cookies_banner: none # The value "show" will show the cookies banner, the value "none" will hide the banner.
-cookie_accept_message: Thanks!
-
-# Build settings
+# build settings
 markdown: kramdown
-# theme: minima
-permalink: pretty
-plugins:
-  - jekyll-feed
-  - jekyll-assets
-  - jekyll-minifier
+
+sass:
+  style: compressed
