@@ -50,11 +50,13 @@
     <h3>Controls</h3>
   </header>
   <p>{{ page.controls_desc }}</p>
-  <ul class="controls">
-    {% for control in page.controls %}
-    <li><b class="key">{{ control.key }}</b>: {{ control.value }}</li>
-    {% endfor %}
-  </ul>
+  {% if page.controls %}
+    <ul class="controls">
+      {% for control in page.controls %}
+      <li><b class="key">{{ control.key }}</b>: {{ control.value }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
 
   <header class="major">
     <h3>Technologies</h3>
@@ -66,25 +68,56 @@
   </header>
   {% assign platforms_count_m1 = page.platforms | size | minus: 1 %}
   <p>
-    {{ page.title }} is available {% unless page.is_download %}on the Web{% else %}for
-    {% for platform in page.platforms %}
-      {{ platform.name }}{% if forloop.index < platforms_count_m1 %}, {% elsif forloop.index == platforms_count_m1 %} and {% else %}.{% endif %}
-    {% endfor %}{% endunless %}
+    {{ page.title }} is available on
+    {% if page.is_download == false %}
+      the Web
+    {% else%}
+      {% for platform in page.platforms %}
+        {% if platform.name == "Zappar Application" %}
+          Android & iOS
+        {% else %}
+          {{ platform.name }}
+        {% endif %}
+        {% if forloop.index < platforms_count_m1 %}, {% elsif forloop.index == platforms_count_m1 %} and {% else %}.{% endif %}
+      {% endfor %}
+    {% endif %}
   </p>
-  <p>{% if page.is_download %}Download and play{% else %}Play online{% endif %} the latest version of {{ page.title }} now!</p>
+  <p>
+    {% if page.is_download %}
+      Download and play
+    {% else %}
+      Play online
+    {% endif %}
+    the latest version of {{ page.title }} now!
+  </p>
+  {% for platform in page.platforms %}
+    {% if platform.name == "Zappar Application" %}
+      <ul>
+        <li>Download the <a href="https://www.zappar.com/getzappar/" target="_blank">Zappar application</a> for Android or iOS.</li>
+        <li>
+          Print the following tracking image, or leave it on screen (click for full resolution).
+          <a class="tracking-image" href="{{ platform.url | absolute_url }}" target="_blank"><img src="{{ platform.url | absolute_url }}" alt="{{ page.title }} tracking image"/></a>
+        </li>
+        <li>Open the Zappar application and scan the tracking image.</li>
+        <li>Enjoy {{ page.title }}!</li>
+      </ul>
+    {% endif %}
+  {% endfor %}
   <ul class="actions icon-buttons">
     {% for platform in page.platforms %}
-      {% capture platform_icon %}
-        {% case platform.name %}
-          {% when "Windows" %}
-            fab fa-windows
-          {% when "Android" %}
-            fab fa-android
-          {% when "Web" %}
-            fas fa-gamepad
-        {% endcase %}
-      {% endcapture %}
-      <li><a href="{{ platform.url }}" class="button" target="_blank"><i class="{{ platform_icon }}"></i>{% unless page.is_download %}Play!{% else %}{{ platform.name }}{% endunless %}</a></li>
+      {% if platform.name != "Zappar Application" %}
+        {% capture platform_icon %}
+          {% case platform.name %}
+            {% when "Windows" %}
+              fab fa-windows
+            {% when "Android" %}
+              fab fa-android
+            {% when "Web" %}
+              fas fa-gamepad
+          {% endcase %}
+        {% endcapture %}
+        <li><a href="{{ platform.url }}" class="button" target="_blank"><i class="{{ platform_icon }}"></i>{% unless page.is_download %}Play!{% else %}{{ platform.name }}{% endunless %}</a></li>
+      {% endif %}
     {% endfor %}
   </ul>
 </div>
