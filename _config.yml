@@ -1,49 +1,16 @@
-# site settings
-title: Oddlord
-subtitle: GameDev
-email: tommy39@gmail.com
-baseurl: # the subpath of your site, e.g. /blog
-url: # the base hostname & protocol for your site
-author: Tommaso Papini
+# Site settings
+title: Oddlord - Game Developement
+description: Oddlord - Game Developementt
+# baseurl: "/particle" # the subpath of your site, e.g. /blog
+# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
-# collections
-collections:
-  projects:
-    output: true
-    permalink: /:collection/:name
+# User settings
+username: Tommaso Papini
+user_description: Bicycle rights irony actually neutra typewriter lyft. Man bun taxidermy put a bird on it, umami yr ramps pop-up ugh bushwick chia lo-fi. Occupy bitters pour-over snackwave you probably haven't heard of them small batch. Cornhole mustache man bun letterpress echo park VHS.
+user_title: Game Developer
+email: anon@anon.com
+twitter_username: lorem_ipsum
+github_username:  lorem_ipsum
+gplus_username:  lorem_ipsum
 
-# defaults
-defaults:
-  - scope:
-      path: ""
-    values:
-      author: "Tommaso Papini"
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      excerpt_separator: <!--more-->
-
-# social settings
-500px_url:
-facebook_url:
-github_url: https://github.com/oddlord
-gitlab_url:
-googleplus_url:
-instagram_url:
-linkedin_url: https://www.linkedin.com/in/tommaso-papini/
-pinterest_url:
-slack_url:
-twitter_url: https://twitter.com/TheOddlord
-
-# build settings
-markdown: kramdown
-
-sass:
-  style: compressed
+exclude: ['package.json', 'src' , 'node_modules']
