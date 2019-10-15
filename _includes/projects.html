@@ -1,0 +1,19 @@
+<section id="{{ projects_id }}" class="projects">
+  <div class="user-details">
+    <h1>{{ projects_title }}</h1>
+  </div>
+  {% assign sorted_projects = projects_list | sort: 'date' | reverse %}
+  {% for project in sorted_projects %}
+    {% assign i = forloop.length | minus: forloop.index0 | modulo: 2 %}
+    <div class="user-projects">
+      <div class="images-{% if i == projects_starting-idx %}left{% else %}right{% endif %}">
+        <img alt="{{ project.img_alt }}" src="{{ project.image | relative_url }}" />
+      </div>
+      <div class="contents-{% if i == projects_starting-idx %}right{% else %}left{% endif %}">
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.description }}</p>
+        <a class="project-link" href="#">Check it out</a>
+      </div>
+    </div>
+  {% endfor %}
+</section>
