@@ -11,10 +11,12 @@
         <a aria-label="My Github" target="_blank" href="{{ site.github_url }}"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
       </div>
       <div class="header-links">
-        <a class="link" href="#about" data-scroll>About Me</a>
+        {% if site.about_me %}
+          <a class="link" href="#about" data-scroll>About Me</a>
+        {% endif %}
         <a class="link" href="#games" data-scroll>Games</a>
         <a class="link" href="#designs" data-scroll>Design</a>
       </div>
   </div>
-  <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+  <a class="down" href="{% if site.about_me %}#about{% else %}#games{% endif %}" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
 </div>

@@ -3,9 +3,10 @@
   {% include head.html %}
   <body>
       {% include header.html %}
-      <section id="about">
+
+      {% if site.about_me %}
         {% include about.html %}
-      </section>
+      {% endif %}
 
       {% assign starting_side = 0 %}
       {% if site.projects_starting_side == "left" %}
