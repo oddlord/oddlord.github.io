@@ -35,16 +35,6 @@ defaults:
       path: ""
     values:
       author: "Tommaso Papini"
-  - scope:
-      path: ""
-      type: "games"
-    values:
-      layout: "game"
-  - scope:
-      path: ""
-      type: "designs"
-    values:
-      layout: "design"
 
 sass:
     sass_dir: _sass
