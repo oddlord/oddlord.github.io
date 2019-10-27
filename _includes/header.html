@@ -1,22 +1,22 @@
-<!-- Wrapper -->
-<div id="wrapper">
-
-<!-- Header -->
-<header id="header"{% if page.layout == "landing" %} class="alt style2"{% endif %}{% if page.layout == "home" %} class="alt"{% endif %}>
-	<a href="{{ "" | relative_url }}/" class="logo"><strong>{{ site.title }}</strong> <span>{{ site.subtitle }}</span></a>
-	<nav>
-		<a href="#menu">Menu</a>
-	</nav>
-</header>
-
-<!-- Menu -->
-<nav id="menu">
-	<ul class="links">
-		<li><a href="{{ "" | absolute_url }}">Home</a></li>
-		<li><a href="{{ "#portfolio" | absolute_url }}">Portfolio</a></li>
-		<li><a href="{{ "#cv" | absolute_url }}">Curriculum Vitæ</a></li>
-		<li><a href="{{ "blog.html" | absolute_url }}">Blog</a></li>
-		<li><a href="{{ "all-posts.html" | absolute_url }}">All Posts</a></li>
-		<li><a href="{{ "#contact" | absolute_url }}">Contact Me</a></li>
-	</ul>
-</nav>
+<div id="particles-js">
+  <div class="header">
+      <h1>
+        <span class="site-title">{{site.username}}</span>
+        <span class="site-description">{{site.user_title}}</span>
+      </h1>
+      <div class="header-icons">
+        <a aria-label="Send email" href="#contact" data-scroll><i class="icon fa fa-envelope"></i></a>
+        <a aria-label="My Twitter" target="_blank" href="{{ site.twitter_url }}"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
+        <a aria-label="My LinkedIn" target="_blank" href="{{ site.linkedin_url }}"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
+        <a aria-label="My Github" target="_blank" href="{{ site.github_url }}"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+      </div>
+      <div class="header-links">
+        {% if site.about_me %}
+          <a class="link" href="#about" data-scroll>About Me</a>
+        {% endif %}
+        <a class="link" href="#games" data-scroll>Games</a>
+        <a class="link" href="#designs" data-scroll>Design</a>
+      </div>
+  </div>
+  <a class="down" href="{% if site.about_me %}#about{% else %}#games{% endif %}" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+</div>

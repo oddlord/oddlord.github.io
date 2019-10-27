@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+      {% include header.html %}
+
+      {% if site.about_me %}
+        {% include about.html %}
+      {% endif %}
+
+      {% assign starting_side = 0 %}
+      {% if site.projects_starting_side == "left" %}
+        {% assign starting_side = 1 %}
+      {% endif %}
+
+      {% assign projects_id = "games" %}
+      {% assign projects_title = "Games" %}
+      {% assign projects_list = site.games %}
+      {% assign projects_starting-idx = site.designs | size | plus: starting_side | modulo: 2 %}
+      {% include projects.html %}
+
+      {% assign projects_id = "designs" %}
+      {% assign projects_title = "Design" %}
+      {% assign projects_list = site.designs %}
+      {% assign projects_starting-idx = starting_side %}
+      {% include projects.html %}
+
+      {% include contact.html %}
+      {% include footer.html %}
+  </body>

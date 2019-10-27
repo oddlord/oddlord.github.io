@@ -1,14 +1,31 @@
-# site settings
-title: Oddlord
-subtitle: GameDev
-email: tommy39@gmail.com
-baseurl: # the subpath of your site, e.g. /blog
-url: # the base hostname & protocol for your site
-author: Tommaso Papini
+# Site settings
+title: Oddlord - Game Developement
+description: Oddlord - Game Developementt
+# baseurl: "/particle" # the subpath of your site, e.g. /blog
+# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+
+# User settings
+username: Tommaso Papini
+user_title: Game Developer
+
+twitter_url: https://twitter.com/TheOddlord
+linkedin_url: https://www.linkedin.com/in/tommaso-papini/
+github_url: https://github.com/oddlord
+
+# enable or disable About Me section
+about_me: false
+
+# position of the bottom project's img
+# values: left, right
+# default value: right
+projects_starting_side: right
 
 # collections
 collections:
-  projects:
+  games:
+    output: true
+    permalink: /:collection/:name
+  designs:
     output: true
     permalink: /:collection/:name
 
@@ -18,32 +35,8 @@ defaults:
       path: ""
     values:
       author: "Tommaso Papini"
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      excerpt_separator: <!--more-->
-
-# social settings
-500px_url:
-facebook_url:
-github_url: https://github.com/oddlord
-gitlab_url:
-googleplus_url:
-instagram_url:
-linkedin_url: https://www.linkedin.com/in/tommaso-papini/
-pinterest_url:
-slack_url:
-twitter_url: https://twitter.com/TheOddlord
-
-# build settings
-markdown: kramdown
 
 sass:
-  style: compressed
+    sass_dir: _sass
+
+exclude: ['package.json', 'src' , 'node_modules']
