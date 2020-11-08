@@ -14,7 +14,11 @@
         <p>{{ project.description }}</p>
 
         {% if project.itch_io %}
-				    <a class="project-link" href="{{ project.itch_io }}" target="_blank">Itch.io {% include itchio_logo.svg %}</a>
+				    <a class="project-link" href="{{ project.itch_io }}" target="_blank">Itch.io <i class="icon fa icon-itch-io-logo"></i></a>
+				{% endif %}
+
+        {% if project.sketchfab %}
+				    <a class="project-link" href="{{ project.sketchfab }}" target="_blank">Sketchfab <i class="icon fa icon-sketchfab-logo"></i></a>
 				{% endif %}
 
         {% if project.learn_more %}

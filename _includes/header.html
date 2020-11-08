@@ -6,14 +6,25 @@
       </h1>
       <div class="header-icons">
         <a aria-label="Send email" href="#contact" data-scroll><i class="icon fa fa-envelope"></i></a>
+
         {% if site.twitter_url %}
           <a aria-label="My Twitter" target="_blank" href="{{ site.twitter_url }}"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
         {% endif %}
+
         {% if site.linkedin_url %}
           <a aria-label="My LinkedIn" target="_blank" href="{{ site.linkedin_url }}"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
         {% endif %}
+
         {% if site.github_url %}
           <a aria-label="My Github" target="_blank" href="{{ site.github_url }}"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+        {% endif %}
+
+        {% if site.itch_io_url %}
+          <a aria-label="My Itch.io" target="_blank" href="{{ site.itch_io_url }}"><i class="icon fa icon-itch-io-logo" aria-hidden="true"></i></a>
+        {% endif %}
+
+        {% if site.sketchfab_url %}
+          <a aria-label="My Sketchfab" target="_blank" href="{{ site.sketchfab_url }}"><i class="icon fa icon-sketchfab-logo" aria-hidden="true"></i></a>
         {% endif %}
       </div>
       <div class="header-links">
