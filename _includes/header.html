@@ -6,9 +6,15 @@
       </h1>
       <div class="header-icons">
         <a aria-label="Send email" href="#contact" data-scroll><i class="icon fa fa-envelope"></i></a>
-        <a aria-label="My Twitter" target="_blank" href="{{ site.twitter_url }}"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
-        <a aria-label="My LinkedIn" target="_blank" href="{{ site.linkedin_url }}"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
-        <a aria-label="My Github" target="_blank" href="{{ site.github_url }}"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+        {% if site.twitter_url %}
+          <a aria-label="My Twitter" target="_blank" href="{{ site.twitter_url }}"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
+        {% endif %}
+        {% if site.linkedin_url %}
+          <a aria-label="My LinkedIn" target="_blank" href="{{ site.linkedin_url }}"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
+        {% endif %}
+        {% if site.github_url %}
+          <a aria-label="My Github" target="_blank" href="{{ site.github_url }}"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+        {% endif %}
       </div>
       <div class="header-links">
         {% if site.about_me %}

@@ -94,6 +94,14 @@
     transition: color 0.3s ease-in,
                 background-color 0.3s ease-in,
                 border-color 0.3s ease-in;
+    svg {
+        background-color: $purple;
+        border-color: $purple;
+        fill: #fff;
+        transition: fill 0.3s ease-in,
+                    background-color 0.3s ease-in,
+                    border-color 0.3s ease-in;
+    }
   }
   &:active {
     background-color: $purple;
@@ -102,5 +110,16 @@
     transition: color 0.3s ease-in,
                 background-color 0.3s ease-in,
                 border-color 0.3s ease-in;
+    svg {
+        background-color: $purple;
+        border-color: $purple;
+        fill: #fff;
+        transition: fill 0.3s ease-in,
+                    background-color 0.3s ease-in,
+                    border-color 0.3s ease-in;
+    }
+  }
+  svg {
+    height: 16px;
   }
 }
