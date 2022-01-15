@@ -31,7 +31,7 @@ collections:
   games:
     output: true
     permalink: /:collection/:name
-  designs:
+  3d_models:
     output: true
     permalink: /:collection/:name
 

@@ -2,7 +2,7 @@
 title: Drop7 Clone
 date: 2018-03-13
 description: Drop7 Clone is a web clone of the smartphone puzzle game Drop7. Explode the discs to earn points until the grid is filled. Made with HTML5 and Javascript.
-image: assets/img/drop7-clone.png
+image: assets/img/games/drop7_clone.png
 img_alt: drop7-clone
 itch_io: https://oddlord.itch.io/drop7-clone
 ---
