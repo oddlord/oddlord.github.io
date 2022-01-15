@@ -19,9 +19,9 @@
       {% assign projects_starting-idx = site.designs | size | plus: starting_side | modulo: 2 %}
       {% include projects.html %}
 
-      {% assign projects_id = "designs" %}
-      {% assign projects_title = "Design" %}
-      {% assign projects_list = site.designs %}
+      {% assign projects_id = "models" %}
+      {% assign projects_title = "3D Models" %}
+      {% assign projects_list = site.3d_models %}
       {% assign projects_starting-idx = starting_side %}
       {% include projects.html %}
 
