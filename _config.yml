@@ -14,6 +14,10 @@ linkedin_url: https://www.linkedin.com/in/tommaso-papini/
 itch_io_url: https://oddlord.itch.io/
 sketchfab_url: https://sketchfab.com/oddlord
 
+# Google-analytics
+# google-analytics:
+#   id: ""
+
 # enable or disable About Me section
 about_me: false
 
