@@ -3,33 +3,21 @@
     <h1>{{ projects_title }}</h1>
   </div>
   {% assign sorted_projects = projects_list | sort: 'date' | reverse %}
-  {% for project in sorted_projects %}
-    {% assign i = forloop.length | minus: forloop.index0 | modulo: 2 %}
-    <div class="user-projects">
-      <div class="images-{% if i == projects_starting-idx %}left{% else %}right{% endif %}">
-        <img alt="{{ project.img_alt }}" src="{{ project.image | relative_url }}" />
+  <div class="row justify-content-center">
+    {% for project in sorted_projects %}
+      <div class="col-md-3 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" href="#modal-{{ projects_id }}-{{ forloop.index }}">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="icon fa fa-search fa-3x"></i>
+            </div>
+          </div>
+          <div class="portfolio-caption">
+            <h4>{{ project.title }}</h4>
+          </div>
+          <img class="img-fluid" src="{{ project.image | relative_url }}" alt="{{ project.img_alt }}">
+        </a>
       </div>
-      <div class="contents-{% if i == projects_starting-idx %}right{% else %}left{% endif %}">
-        <h3>{{ project.title }}</h3>
-        <p>{{ project.description }}</p>
-
-        {% if project.website %}
-				    <a class="project-link" href="{{ project.website }}" target="_blank">Website <i class="icon fa fa-globe"></i></a>
-				{% endif %}
-
-        {% if project.itch_io %}
-				    <a class="project-link" href="{{ project.itch_io }}" target="_blank">Itch.io <i class="icon fa icon-itch-io-logo"></i></a>
-				{% endif %}
-
-        {% if project.sketchfab %}
-				    <a class="project-link" href="{{ project.sketchfab }}" target="_blank">Sketchfab <i class="icon fa icon-sketchfab-logo"></i></a>
-				{% endif %}
-
-        {% if project.youtube %}
-				    <a class="project-link" href="{{ project.youtube }}" target="_blank">Youtube <i class="icon fa fa-youtube"></i></a>
-				{% endif %}
-        
-      </div>
-    </div>
-  {% endfor %}
+    {% endfor %}
+  </div>
 </section>

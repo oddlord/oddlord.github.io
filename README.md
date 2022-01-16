@@ -1,6 +1,6 @@
-# Oddlord's Particle Jekyll Theme
+# Oddlord's Portfolio
 
-![](./particle.jpg)
+![](./assets/img/particle.jpg)
 
 This is a simple and minimalist template for Jekyll designed for developers that want to show of their portfolio.
 
@@ -33,8 +33,6 @@ This theme is free and open source software, distributed under the The MIT Licen
 
 ## Credits
 
-My personal portfolio page has been forked from the [nrandecker/particle](https://github.com/nrandecker/particle) theme.
-
-This theme was partially designed with the inspiration from these fine folks:
-- [Willian Justen](https://github.com/willianjusten/will-jekyll-template)
-- [Vincent Garreau](https://github.com/VincentGarreau/particles.js/)
+This portfolio page is a mix of the following Jekyll themes:
+- [nrandecker/particle](https://github.com/nrandecker/particle)
+- [raviriley/agency-jekyll-theme](https://github.com/raviriley/agency-jekyll-theme)

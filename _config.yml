@@ -21,11 +21,6 @@ sketchfab_url: https://sketchfab.com/oddlord
 # enable or disable About Me section
 about_me: false
 
-# position of the bottom project's img
-# values: left, right
-# default value: right
-projects_starting_side: right
-
 # collections
 collections:
   games:
