@@ -23,8 +23,9 @@
               </ul>
               <p>
                 {% if project.website %}<a class="project-link" href="{{ project.website }}" target="_blank">Website <i class="icon fa fa-globe"></i></a>{% endif %}
-                {% if project.itch_io %}<a class="project-link" href="{{ project.itch_io }}" target="_blank">Itch.io <i class="icon fa icon-itch-io-logo"></i></a>{% endif %}
+                {% if project.itch_io %}<a class="project-link" href="{{ project.itch_io }}" target="_blank">Itch.io <i class="icon fa fa-brands fa-itch-io"></i></a>{% endif %}
                 {% if project.sketchfab %}<a class="project-link" href="{{ project.sketchfab }}" target="_blank">Sketchfab <i class="icon fa icon-sketchfab-logo"></i></a>{% endif %}
+                {% if project.artstation %}<a class="project-link" href="{{ project.artstation }}" target="_blank">ArtStation <i class="icon fa fa-brands fa-artstation"></i></a>{% endif %}
                 {% if project.youtube %}<a class="project-link" href="{{ project.youtube }}" target="_blank">Youtube <i class="icon fa fa-youtube"></i></a>{% endif %}
               </p>
               <p><button class="btn btn-primary" data-dismiss="modal" type="button"><i class="icon fa fa-times"></i> Close</button></p>

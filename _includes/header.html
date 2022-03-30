@@ -20,11 +20,15 @@
         {% endif %}
 
         {% if site.itch_io_url %}
-          <a aria-label="My Itch.io" target="_blank" href="{{ site.itch_io_url }}"><i class="icon fa icon-itch-io-logo" aria-hidden="true"></i></a>
+          <a aria-label="My Itch.io" target="_blank" href="{{ site.itch_io_url }}"><i class="icon fa fa-brands fa-itch-io" aria-hidden="true"></i></a>
         {% endif %}
 
         {% if site.sketchfab_url %}
           <a aria-label="My Sketchfab" target="_blank" href="{{ site.sketchfab_url }}"><i class="icon fa icon-sketchfab-logo" aria-hidden="true"></i></a>
+        {% endif %}
+
+        {% if site.artstation_url %}
+          <a aria-label="My ArtStation" target="_blank" href="{{ site.artstation_url }}"><i class="icon fa fa-brands fa-artstation" aria-hidden="true"></i></a>
         {% endif %}
       </div>
       <div class="header-links">
