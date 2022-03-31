@@ -7,4 +7,5 @@ image: assets/img/3d_models/cubot.png
 img_alt: cubot
 technologies: [Blender]
 sketchfab: https://skfb.ly/6Wr96
+artstation: https://www.artstation.com/artwork/lRyOyG
 ---
