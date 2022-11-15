@@ -8,5 +8,5 @@ img_alt: pigeon_hunter
 company: GripAble
 technologies: [Unity, C#]
 website: "https://www.gripable.co/"
-youtube: "https://www.youtube.com/watch?v=gCYTQ7j2-8E"
+youtube: ["gCYTQ7j2-8E"]
 ---

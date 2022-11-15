@@ -8,5 +8,5 @@ img_alt: pufferfish
 company: GripAble
 technologies: [Unity, C#]
 website: "https://www.gripable.co/"
-youtube: "https://www.youtube.com/watch?v=4efS6ObLCiA"
+youtube: ["4efS6ObLCiA"]
 ---

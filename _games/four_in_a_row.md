@@ -6,7 +6,7 @@ description: Four In A Row is a GripAble activity that promotes pronation/supina
 image: assets/img/games/four_in_a_row.png
 img_alt: four_in_a_row
 company: GripAble
-technologies: [Unity, C#, PUN]
+technologies: [Unity, C#, Photon (PUN)]
 website: "https://www.gripable.co/"
-youtube: "https://youtu.be/MnZZrFhQ72M"
+youtube: ["MnZZrFhQ72M"]
 ---

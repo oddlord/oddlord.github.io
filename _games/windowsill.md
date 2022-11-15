@@ -8,5 +8,5 @@ img_alt: windowsill
 company: GripAble
 technologies: [Unity, C#]
 website: "https://www.gripable.co/"
-youtube: "https://www.youtube.com/watch?v=Usekj0wjLSs"
+youtube: ["Usekj0wjLSs"]
 ---

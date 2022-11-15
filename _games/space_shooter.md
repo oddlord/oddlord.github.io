@@ -8,5 +8,5 @@ img_alt: space_shooter
 company: GripAble
 technologies: [Unity, C#]
 website: "https://www.gripable.co/"
-youtube: "https://www.youtube.com/watch?v=S4yC7iFjmvc"
+youtube: ["S4yC7iFjmvc"]
 ---

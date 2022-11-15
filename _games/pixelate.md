@@ -8,5 +8,5 @@ img_alt: pixelate
 company: GripAble
 technologies: [Unity, C#]
 website: "https://www.gripable.co/"
-youtube: "https://www.youtube.com/watch?v=TMslw84WoM0"
+youtube: ["TMslw84WoM0"]
 ---

@@ -8,5 +8,5 @@ img_alt: plume
 company: GripAble
 technologies: [Unity, C#]
 website: "https://www.gripable.co/"
-youtube: "https://www.youtube.com/watch?v=qwUBX5beTSM"
+youtube: ["qwUBX5beTSM"]
 ---

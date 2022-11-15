@@ -8,5 +8,5 @@ img_alt: concierge
 company: GripAble
 technologies: [Unity, C#]
 website: "https://www.gripable.co/"
-youtube: "https://www.youtube.com/watch?v=P7UJ5-9av4w"
+youtube: ["P7UJ5-9av4w"]
 ---

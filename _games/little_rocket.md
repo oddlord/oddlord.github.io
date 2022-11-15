@@ -8,5 +8,5 @@ img_alt: little_rocket
 company: GripAble
 technologies: [Unity, C#]
 website: "https://www.gripable.co/"
-youtube: "https://www.youtube.com/watch?v=Aj90gKhVfpY"
+youtube: ["Aj90gKhVfpY"]
 ---
