@@ -1,47 +1,126 @@
 # Site settings
-title: Oddlord - Game Developement
-description: Oddlord's Game Developement and Design portfolio
-# baseurl: "/particle" # the subpath of your site, e.g. /blog
-# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+title: Tommaso Papini
+formspree_id: xaywbyaw
+url: https://oddlord.github.io
+description: "Tommaso Papini's portfolio. Senior Game Developer."
+keywords: "Tommaso Papini, Game Developer, Unity, Unity 3D, Games, Videogames, Game Development, Gamedev, Indie, Oddlord, Blender"
+skills: "Senior Game Developer"
+meta_author: Tommaso Papini
 
-# User settings
-username: Tommaso Papini
-user_title: Game Developer
+# Google webmaster tools
+google_verify:
 
-# twitter_url: https://twitter.com/TheOddlord
-linkedin_url: https://www.linkedin.com/in/tommaso-papini/
-github_url: https://github.com/oddlord
-itch_io_url: https://oddlord.itch.io/
-sketchfab_url: https://sketchfab.com/oddlord
-artstation_url: https://www.artstation.com/oddlord
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
 
-# Google-analytics
-# google-analytics:
-#   id: ""
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  # --- Green + dark blue (original) ---
+  # primary: "18bc9c"
+  # primary-rgb: "24,288,156"
+  # secondary: "2c3e50"
+  # secondary-dark: "233140"
+  # neutral: "ffffff"
+  # particles-accent: "ffffff"
+  # particles-bg: "233140"
 
-# enable or disable About Me section
-about_me: false
+  # --- Red + blue (original) ---
+  # primary: "80B3FF"
+  # primary-rgb: "128,179,255"
+  # secondary: "FD6E8A"
+  # secondary-dark: "A2122F"
+  # neutral: "ffffff"
+  # particles-accent: "ffffff"
+  # particles-bg: "A2122F"
 
-# collections
+  # --- Orange + blue ---
+  # primary: "EC8305"
+  # primary-rgb: "236, 131, 5"
+  # secondary: "024CAA"
+  # secondary-dark: "091057"
+  # neutral: "DBD3D3"
+  # particles-accent: "DBD3D3"
+  # particles-bg: "091057"
+
+  # --- Orange + blue ---
+  primary: "e07a5f"
+  primary-rgb: "224, 122, 95"
+  secondary: "024CAA"
+  secondary-dark: "091057"
+  neutral: "f4f1de"
+  particles-accent: "f4f1de"
+  particles-bg: "091057"
+
+  # --- TEST ---
+  # primary: "ff0000"
+  # primary-rgb: "255, 0, 0"
+  # secondary: "00ff00"
+  # secondary-dark: "0000ff"
+  # neutral: "00ffff"
+  # particles-accent: "000000"
+  # particles-bg: "ffff00"
+
+# Footer settings
+footer:
+  location: Location
+  social: Around the Web
+
+show_header_contact_icon: true
+
+socials:
+  twitter:
+    title: My Twitter
+    url: https://twitter.com/TheOddlord
+    icon_classes: icon fa fa-twitter
+    show_in_header: false
+  linkedin:
+    title: My LinkedIn
+    url: https://www.linkedin.com/in/tommaso-papini/
+    icon_classes: icon fa fa-linkedin
+    show_in_header: true
+  github:
+    title: My Github
+    url: https://github.com/oddlord
+    icon_classes: icon fa fa-github-alt
+    show_in_header: true
+  itch_io:
+    title: My Itch.io
+    url: https://oddlord.itch.io
+    icon_classes: icon fa fa-brands fa-itch-io
+    show_in_header: true
+  sketchfab:
+    title: My Sketchfab
+    url: https://sketchfab.com/oddlord
+    icon_classes: icon icon-sketchfab-logo
+    show_in_header: true
+  artstation:
+    title: My ArtStation
+    url: https://www.artstation.com/oddlord
+    icon_classes: icon fa fa-brands fa-artstation
+    show_in_header: false
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: London, United Kingdom
+
+# Credits content
+credits: ''
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
 collections:
-  games:
+  projects_portfolio:
     output: true
     permalink: /:collection/:name
-  prototypes:
-    output: true
-    permalink: /:collection/:name
-  3d_models:
+  projects_other:
     output: true
     permalink: /:collection/:name
 
-# defaults
+#for posts
 defaults:
   - scope:
       path: ""
     values:
       author: "Tommaso Papini"
-
-sass:
-    sass_dir: _sass
-
-exclude: ['package.json', 'src' , 'node_modules']

@@ -1,23 +1,25 @@
-<section id="{{ projects_id }}" class="projects">
-  <div class="user-details">
-    <h1>{{ projects_title }}</h1>
-  </div>
-  {% assign sorted_projects = projects_list | sort: 'date' | reverse %}
-  <div class="row justify-content-center">
-    {% for project in sorted_projects %}
-      <div class="col-md-3 col-sm-6 portfolio-item">
-        <a class="portfolio-link" data-toggle="modal" href="#modal-{{ projects_id }}-{{ forloop.index }}">
-          <div class="portfolio-hover">
-            <div class="portfolio-hover-content">
-              <i class="icon fa fa-search fa-3x"></i>
+<section id="{{ projects_id }}" class="projects-section section-neutral">
+  <div class="container portfolio-flex-grid">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>{{ projects_title }}</h2>
+        <hr class="star-primary">
+      </div>
+    </div>
+    {% assign sorted_projects = projects_list | sort: 'date' | reverse %}
+    <div class="portfolio-flex-row">
+      {% for project in sorted_projects %}
+      <div class="portfolio-flex-item portfolio-item">
+        <a href="#modal-{{ projects_id }}-{{ project.uid }}" class="portfolio-link" data-toggle="modal">
+          <div class="caption">
+            <div class="caption-content">
+              <i class="fa fa-search-plus fa-3x"></i>
             </div>
           </div>
-          <div class="portfolio-caption">
-            <h4>{{ project.title }}</h4>
-          </div>
-          <img class="img-fluid" src="{{ project.image | relative_url }}" alt="{{ project.img_alt }}">
+          <img src="{{ project.img }}" class="img-responsive" alt="{{ project.img_alt }}">
         </a>
       </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
 </section>

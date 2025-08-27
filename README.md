@@ -1,38 +1,31 @@
-# Oddlord's Portfolio
+# Oddlord's GitHub Pages
 
-![](./assets/img/particle.jpg)
+![](./img/readme_header.png)
 
-This is a simple and minimalist template for Jekyll designed for developers that want to show of their portfolio.
+This is my minimal portfolio page made in Jekyll.
 
-## Site and User Settings
+## How To Run
 
-`_config.yml` is used to to customize your site.
-
-**Don't forget to change your url before you deploy your site!**
-
-## Color and Particle Customization
-- Color Customization
-  - Edit the sass variables
-- Particle Customization
-  - Edit the json data in particle function in app.js
-  - Refer to [Particle.js](https://github.com/VincentGarreau/particles.js/) for help
-
-## Running the blog in local
-
-In order to compile the assets and run Jekyll on local you need to follow those steps:
-
-- Install [NodeJS](https://nodejs.org/)
-- Install [Jekyll](https://jekyllrb.com): `sudo gem install bundler jekyll`
-- Install [Yarn](https://yarnpkg.com/): `npm install -g yarn gulp-cli`
-- Install dependencies: `yarn`
-- Run: `gulp`
-
-## License
-
-This theme is free and open source software, distributed under the The MIT License. So feel free to use this Jekyll theme anyway you want.
+1. Download [Ruby](https://www.ruby-lang.org/en/downloads/)
+1. Install the `jekyll` and `bundler` gems
+    ```
+    gem install jekyll bundler
+    ```
+1. `cd` into the root of this project
+1. Install the project's dependencies
+    ```
+    bundle install
+    ```
+1. Build the site and serve it locally
+    ```
+    bundle exec jekyll serve
+    ```
+1. Navigate to [http://localhost:4000](http://localhost:4000) to access the site
 
 ## Credits
 
-This portfolio page is a mix of the following Jekyll themes:
+This page is a mix of the following Jekyll themes:
 - [nrandecker/particle](https://github.com/nrandecker/particle)
 - [raviriley/agency-jekyll-theme](https://github.com/raviriley/agency-jekyll-theme)
+- [jeromelachaud/freelancer-theme](https://github.com/jeromelachaud/freelancer-theme)
+

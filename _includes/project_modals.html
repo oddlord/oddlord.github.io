@@ -1,53 +1,57 @@
 {% assign sorted_projects = projects_list | sort: 'date' | reverse %}
 {% for project in sorted_projects %}
-<div class="portfolio-modal modal fade" id="modal-{{ projects_id }}-{{ forloop.index }}" tabindex="-1" role="dialog"
+<div class="portfolio-modal modal fade" id="modal-{{ projects_id }}-{{ project.uid }}" tabindex="-1" role="dialog"
   aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl"></div>
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
         </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <div class="modal-body">
-              <h2 class="text-uppercase">{{ project.title }}</h2>
-              <p class="item-intro text-muted">{{ project.caption }}</p>
-              <img class="img-fluid d-block mx-auto" src="{{ project.image }}" alt="{{ project.alt }}" />
-              <p>{{ project.description }}</p>
-              {% for youtube_id in project.youtube %}
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ youtube_id }}"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-              </iframe>
-              {% endfor %}
-              <ul style="margin-top: 30px" class="list-inline">
-                <li>Date: {{ project.date | date: "%B %Y" }}</li>
-                {% if project.technologies %}<li>Technologies: {% for technology in project.technologies %}{{ technology
-                  }}{% unless forloop.last %}, {% endunless %}{% endfor %}</li>{% endif %}
-                {% if project.company %}<li>Company: {{ project.company }}</li>{% endif %}
-              </ul>
-              <p>
-                {% if project.website %}<a class="project-link" href="{{ project.website }}" target="_blank">Website <i
-                    class="icon fa fa-globe"></i></a>{% endif %}
-                {% if project.itch_io %}<a class="project-link" href="{{ project.itch_io }}" target="_blank">Itch.io <i
-                    class="icon fa fa-brands fa-itch-io"></i></a>{% endif %}
-                {% if project.sketchfab %}<a class="project-link" href="{{ project.sketchfab }}"
-                  target="_blank">Sketchfab <i class="icon fa icon-sketchfab-logo"></i></a>{% endif %}
-                {% if project.artstation %}<a class="project-link" href="{{ project.artstation }}"
-                  target="_blank">ArtStation <i class="icon fa fa-brands fa-artstation"></i></a>{% endif %}
-                {% if project.github %}<a class="project-link" href="{{ project.github }}" target="_blank">GitHub <i
-                    class="icon fa fa-brands fa-github"></i></a>{% endif %}
-              </p>
-              <p>
-                <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="icon fa fa-times"></i>
-                  Close
-                </button>
-              </p>
-            </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <h2>{{ project.title }}</h2>
+            <hr class="star-primary">
+            <img src="{{ project.img }}" class="img-responsive img-centered" alt="{{ project.img_alt }}">
+            {% if project.description %}
+            <p>{{ project.description }}</p>
+            {% endif %}
+            <ul class="list-inline item-details">
+              {% if project.company %}
+              <li>Company:
+                {% if project.company_url %}
+                <a class="modal-link" href="{{ project.company_url }}" target="_blank">{{ project.company }}</a>
+                {% else %}
+                <strong>{{ project.company }}</strong>
+                {% endif %}
+              </li>
+              {% endif %}
+
+              {% if project.project_dates %}
+              <li>Dates: <strong>{{ project.project_dates }}</strong></li>
+              {% endif %}
+               
+              {% if project.technologies %}
+              <li>Tech:
+                {% for technology in project.technologies %}
+                <strong>{{ technology }}</strong>{% unless forloop.last %}, {% endunless %}
+                {% endfor %}
+              </li>
+              {% endif %}
+               
+              {% if project.platforms %}
+              <li>Platforms:
+                {% for platform in project.platforms %}
+                <strong>{{ platform }}</strong>{% unless forloop.last %}, {% endunless %}
+                {% endfor %}
+              </li>
+              {% endif %}
+            </ul>
+            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+              Close</button>
           </div>
         </div>
       </div>

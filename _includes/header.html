@@ -1,51 +1,28 @@
-<div id="particles-js">
-  <div class="header">
-    <h1>
-      <span class="site-title">{{site.username}}</span>
-      <span class="site-description">{{site.user_title}}</span>
-    </h1>
-    <div class="header-icons">
-      <a aria-label="Send email" href="#contact" data-scroll><i class="icon fa fa-envelope"></i></a>
+<!-- Header -->
+<header>
+  <div id="particles-js">
+    <div class="header">
+        <div class="intro-text">
+          <span class="name">{{ site.title }}</span>
+          <hr class="star-particles" />
+          <span class="skills">{{ site.skills }}</span>
+        </div>
+        <div class="header-icons">
+          {% if site.show_header_contact_icon %}
+          <a aria-label="Send email" href="#contact" data-scroll><i class="icon fa fa-envelope"></i></a>
+          {% endif %}
 
-      {% if site.twitter_url %}
-      <a aria-label="My Twitter" target="_blank" href="{{ site.twitter_url }}"><i class="icon fa fa-twitter"
-          aria-hidden="true"></i></a>
-      {% endif %}
-
-      {% if site.linkedin_url %}
-      <a aria-label="My LinkedIn" target="_blank" href="{{ site.linkedin_url }}"><i class="icon fa fa-linkedin"
-          aria-hidden="true"></i></a>
-      {% endif %}
-
-      {% if site.github_url %}
-      <a aria-label="My Github" target="_blank" href="{{ site.github_url }}"><i class="icon fa fa-github-alt"
-          aria-hidden="true"></i></a>
-      {% endif %}
-
-      {% if site.itch_io_url %}
-      <a aria-label="My Itch.io" target="_blank" href="{{ site.itch_io_url }}"><i class="icon fa fa-brands fa-itch-io"
-          aria-hidden="true"></i></a>
-      {% endif %}
-
-      {% if site.sketchfab_url %}
-      <a aria-label="My Sketchfab" target="_blank" href="{{ site.sketchfab_url }}"><i
-          class="icon fa icon-sketchfab-logo" aria-hidden="true"></i></a>
-      {% endif %}
-
-      {% if site.artstation_url %}
-      <a aria-label="My ArtStation" target="_blank" href="{{ site.artstation_url }}"><i
-          class="icon fa fa-brands fa-artstation" aria-hidden="true"></i></a>
-      {% endif %}
+          {% for social_hash in site.socials %}
+          {% assign social = social_hash[1] %}
+          {% if social.show_in_header %}
+          <a aria-label="{{ social.title }}" target="_blank" href="{{ social.url }}">
+            <i class="{{ social.icon_classes }}" aria-hidden="true"></i>
+          </a>
+          {% endif %}
+          {% endfor %}
+        </div>
     </div>
-    <div class="header-links">
-      {% if site.about_me %}
-      <a class="link" href="#about" data-scroll>About Me</a>
-      {% endif %}
-      <a class="link" href="#games" data-scroll>Games</a>
-      <a class="link" href="#prototypes" data-scroll>Prototypes</a>
-      <a class="link" href="#models" data-scroll>3D Models</a>
-    </div>
-  </div>
-  <a class="down" href="{% if site.about_me %}#about{% else %}#games{% endif %}" data-scroll><i
-      class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
-</div>
+    <a class="down" href="#portfolio" data-scroll>
+      <i class="icon fa fa-chevron-down" aria-hidden="true"></i>
+    </a>
+</header>

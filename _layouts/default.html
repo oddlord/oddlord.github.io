@@ -1,34 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 {% include head.html %}
 
-<body>
-  {% include header.html %}
+  <body id="page-top" class="index">
+    {% include header.html %}
 
-  {% if site.about_me %}
-  {% include about.html %}
-  {% endif %}
+    {% assign projects_id = "portfolio" %}
+    {% assign projects_title = "Portfolio" %}
+    {% assign projects_list = site.projects_portfolio %}
+    {% include projects.html %}
+    {% include project_modals.html %}
 
-  {% assign projects_id = "games" %}
-  {% assign projects_title = "Games" %}
-  {% assign projects_list = site.games %}
-  {% include projects.html %}
-  {% include project_modals.html %}
+    {% include about.html %}
 
-  {% assign projects_id = "prototypes" %}
-  {% assign projects_title = "Prototypes" %}
-  {% assign projects_list = site.prototypes %}
-  {% include projects.html %}
-  {% include project_modals.html %}
+    {% assign projects_id = "other" %}
+    {% assign projects_title = "Other Stuff" %}
+    {% assign projects_list = site.projects_other %}
+    {% include projects.html %}
+    {% include project_modals.html %}
 
-  {% assign projects_id = "models" %}
-  {% assign projects_title = "3D Models" %}
-  {% assign projects_list = site.3d_models %}
-  {% include projects.html %}
-  {% include project_modals.html %}
+    {% include separator.html %}
 
-  {% include contact.html %}
-  {% include footer.html %}
-</body>
+    {% include contact.html %}
+    {% include footer.html %}
+    
+    {% include js.html %}
+  </body>
 
 </html>
